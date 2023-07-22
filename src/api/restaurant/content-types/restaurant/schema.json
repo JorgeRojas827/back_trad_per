@@ -67,6 +67,17 @@
     },
     "longitude": {
       "type": "float"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "restaurants"
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true,
+      "unique": false
     }
   }
 }
